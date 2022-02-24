@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/* reset */
+html {-webkit-text-size-adjust: none; text-size-adjust: none;}
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700;}
+a {color: inherit; text-decoration: inherit;}
+li {list-style: none;}
+/* table {border-collapse: collapse;} */
+/* table caption {overflow: hidden; width: 0; height: 0;} */
+i[class^="fa"] {position: relative; display: inline-block; vertical-align: middle;}
+i[class^="fa"] span {position: absolute; left: -9999px;}
+.ir-hidden {position: absolute; left: -9999px;}
+.mobile {display: none !important;}
+br.only-m {content: '';}
+br.only-m::after {content: '\00a0';}
+
+/* body */
+body {font-family: 'NotoSansKR', sans-serif; font-size: 14px; color: #05141f; background: #ffffff;}
+#wrapper {min-width: 1024px; max-width: 1920px; margin: 0 auto; overflow: hidden; position: relative;}
+#skip-nav {position: fixed; left: 0; top: -40px; width: 100%; line-height: 40px; text-align: center; background-color: rgba(0, 0, 0, 0.8); color: #ffffff; font-size: 16px; transition: top 0.3s; z-index: 100000;}
+#skip-nav:focus {top: 0;}
+
+
+#header {position: fixed; width: 100%; height: 100px; box-sizing: border-box; z-index: 100000;}
+#header > div.content-box {display: table; background-color: skyblue; width: 100%; height: 100%; box-sizing: border-box;}
+#header > div.content-box > div.table-row {display: table-row;}
+#header > div.content-box div.table-left {display: table-cell;  width: 50%; padding: 30px 0 0 30px; position: relative; } 
+#header > div.content-box div.table-left div.logo a {width: 448px; height: 70px; background: url(../img/logo_black.png) no-repeat; text-indent: -9999px; display: inline-block;  }
+#header > div.content-box div.table-left img {background-color: blue;}
+#header > div.content-box div.table-right {display: table-cell; width: 50%; position: relative; padding-right: 30px;}
+#header div.table-right > ul {background-color: green; text-align: end;  width: 100%;}
+#header div.table-right > ul  li {display: inline-block; }
+#header div.table-right > ul.sns-list {background-color: pink; padding: 10px 0;}
+#header div.table-right > ul.sns-list > li {width: 30px; height: 30px; background-color: yellow; text-align: center;}
+#header div.table-right > ul.sns-list > li.on a{}
+#header div.table-right > ul.sns-list > li a {line-height: 30px; background-color: green; width: 100%; display: block;}
+#header div.table-right > ul.gnb-list {padding: 10px 0 0 0;}
+#header div.table-right > ul.gnb-list li {width: 140px; background-color: skyblue; text-align: center;}
+#header div.table-right > ul.gnb-list li > a {font-size: 18px; font-weight: 700;}
+#header div.table-right > ul.gnb-list ul.sub {display: none;}
+
+#main {padding-top: 100px;}
+#main-visual {}
+#main-visual div.content-box {overflow: hidden;  height: calc(100vh - 100px); position: relative;}
+#main-visual div.content-box div.left { background-color: green; float: left; width: 200px; padding: 30px 0 0 30px; box-sizing: border-box; height: 100vh;}
+#main-visual div.content-box div.left ul.actor-list {background-color: skyblue;}
+#main-visual div.content-box div.left ul.actor-list li {height: 32px; background-color: lime; border: 1px solid black; box-sizing: border-box;}
+#main-visual div.content-box div.left ul.actor-list li a {background-color: lightblue; display: block; width: 100%; line-height: 32px;  font-size: 15px; font-weight: 400; color: #666666;}
+#main-visual div.content-box div.left ul.fanclub {background-color: blue; position: absolute; bottom: 10px; left: 10px;}
+#main-visual div.content-box div.left ul.fanclub li {padding-top: 10px; width: 100%; height: 100%;}
+#main-visual div.content-box div.left ul.fanclub li a {width: 100%; height: 100%; display: block;}
+#main-visual div.content-box div.right {background-color: blue; float: left; width: calc(100% - 200px);}
+#main-visual div.content-box div.right img {width: 100%;}
+
+#main-work {}
+#main-work div.content-box {width: 100%; padding: 80px 0; background-color: skyblue; text-align: center;}
+#main-work div.content-box h3 {font-size: 33px; font-weight: 600; position: relative; background-color: white; color: #333; margin-top: 9px;}
+#main-work div.content-box h3::before {content: ''; width: 56px; height: 4px; background-color: #616161; position: absolute; left: 50%; top: -5px; transform: translate(-50%, 0);}
+#main-work div.content-box div.slide {background-color: plum; height: 750px; padding: 100px 0 0 60px;}
+#main-work div.content-box div.slide ul.work-list {background-color: lightpink; overflow: hidden; width: 300000px; }
+#main-work div.content-box div.slide ul li {float: left; background-color: yellow; border: 1px solid black; box-sizing: border-box; width: 261px;}
+#main-work div.content-box div.slide ul li + li {margin-left: 100px;}
+#main-work div.content-box div.slide ul li  div.genre {font-size: 20px; font-weight: 700;color: #669933; margin: 0 0 20px;}
+#main-work div.content-box div.slide ul li  div.image {background-color: purple; width: 100%; height: 360px;}
+#main-work div.content-box div.slide ul li  div.image img {width: 100%; height: 100%;}
+#main-work div.content-box div.slide ul li  div.text {background-color: lime; margin: 20px 0 10px; }
+#main-work div.content-box div.slide div.text span.title {font-size: 16px; font-weight: 700; color: #333; background-color: lightblue; display: block; }
+#main-work div.content-box div.slide div.text span.cast {display: block; background-color: hotpink; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; padding: 0 10px; box-sizing: border-box; margin-top: 10px; font-size: 14px; color: #333;}
+#main-work div.content-box div.slide div.text span.desc {margin-top: 10px; font-size: 14px; color: #333;}
+#main-work div.content-box div.slide img {width: 241px;}
+
+#main-vod {}
+#main-vod div.content-box {width: 100%; padding: 80px 0; background-color: skyblue; text-align: center;}
+#main-vod div.content-box h3 {font-size: 33px; font-weight: 600; position: relative; background-color: white; color: #333; margin-top: 9px;}
+#main-vod div.content-box h3::before {content: ''; width: 56px; height: 4px; background-color: #616161; position: absolute; left: 50%; top: -5px; transform: translate(-50%, 0);}
+
+#main-vod ul.youtube-list {padding-top: 100px; background-color: green; max-width: 1070px; margin: 0 auto; overflow: hidden;}
+#main-vod ul.youtube-list li {float: left; background-color: pink; width: calc(50% - 10px); height: 352px;}
+#main-vod ul.youtube-list li + li {margin-left: 20px;}
+#main-vod ul.youtube-list li iframe {width: 100%; height: 100%;}
+#main-vod div.slide-box {background-color: lime; margin-top: 50px;}
+#main-vod div.slide-box  div.box {width: 1482px; margin: 0 auto; overflow: hidden;}
+#main-vod div.slide-box  ul.vod-list {background-color: plum; overflow: hidden; width: 30000px;}
+#main-vod div.slide-box  ul.vod-list li {float: left; width: 186px; background-color: blue;}
+#main-vod div.slide-box  ul.vod-list li + li {margin-left: 30px;}
+#main-vod div.slide-box  ul.vod-list li span.title {background-color: green; display: block; text-align: left; padding: 5px 5px 5px 0; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+#main-vod div.slide-box  ul.vod-list li img { width: 100%;}
+
+#main-community {}
+#main-community div.content-box {width: 100%; margin-top: 80px; background-color: #eee; text-align: center; padding-bottom: 80px;}
+#main-community div.content-box h3 {font-size: 33px; font-weight: 600; position: relative; background-color: white; color: #333; margin-top: 9px;}
+#main-community div.content-box h3::before {content: ''; width: 56px; height: 4px; background-color: #616161; position: absolute; left: 50%; top: -5px; transform: translate(-50%, 0);}
+#main-community div.content-box a.more {display: block; background-color: #eee; max-width: 1500px; margin: 0 auto; text-align: end; font-size: 15px; font-weight: 700; color: #666666; padding: 10px 0;}
+#main-community div.content-box ul.community-list {max-width: 1500px; margin: 0 auto; overflow: hidden;}
+#main-community div.content-box ul.community-list > li {box-sizing: border-box; width: calc(25% - 22.5px); float: left;}
+#main-community div.content-box ul.community-list > li div.image {position: relative;}
+#main-community div.content-box ul.community-list > li a.on > div.image::after {content: ''; width: 100%; height: 100%; position: absolute; left: 0; top: 0; background-color: #fff; opacity: 0.4;}
+/* #main-community div.content-box ul.community-list > li a.on:hover::after {content: ''; width: 100%; height: 100%; position: absolute; left: 0; top: 0; background-color: #fff; opacity: 0.4;} */
+#main-community div.content-box ul.community-list > li div.text { padding: 20px; text-align: left;}
+#main-community div.content-box ul.community-list > li div.text span {display: block;}
+#main-community div.content-box ul.community-list > li div.text span.title {background-color: white; font-size: 18px; color: #333333; margin-bottom: 20px; line-height: 1.2; font-weight: 700;}
+#main-community div.content-box ul.community-list > li div.text span.desc {font-size: 15px; color: #666666; font-weight: 500;}
+#main-community div.content-box ul.community-list > li div.text span.date {font-size: 15px; color: #666666; margin-top: 20px;}
+
+
+#main-community div.content-box ul.community-list > li + li {margin-left: 30px;}
+#main-community div.content-box ul.community-list > li img {width: 100%;}
+#main-community div.content-box ul.community-list > li > a {margin-bottom: 30px; display: block; background-color: #fff; box-shadow: 5px 5px 5px #bfbfbf;}
+
+
+
+
+
+
+#footer {width: 100%; background-color: skyblue; text-align: center;}
+#footer div.content-box {max-width: 1200px; background-color: green; margin: 0 auto; padding: 40px 0; display: table; box-sizing: border-box;}
+#footer section.info {display: table-cell; width: 50%; background-color: pink; text-align: left;}
+#footer section.info h2 {background-color: blue; margin-bottom: 10px;}
+#footer section.info span.logo-name {display: block; background-color: lightyellow; font-size: 14px; font-weight: 700; color: #fff;}
+#footer section.info address span {display: block; background-color: yellow; font-size: 12px; font-style: normal; color: #999999;}
+#footer section.info p.copyright {margin-top: 10px; background-color: skyblue; font-size: 11px; color: #999999;}
+#footer section.family-site {display: table-cell; width: 30%; text-align: end; background-color: plum;}
+#footer section.family-site div.family-site-box {background-color: lime; width: 100%; height: 100%;}
+#footer section.family-site h3 {background-color: green;}
+#footer section.sns-list {display: table-cell; width: 20%;}
+#footer section.sns-list ul.sns-logo {}
+#footer section.sns-list ul.sns-logo > li {width: 30px; height: 30px; display: inline-block;}
+#footer section.sns-list ul.sns-logo > li a {background-color: gray; display: block; width: 100%; height: 100%; line-height: 30px;}
