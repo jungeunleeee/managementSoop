@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="apple-mobile-web-app-title" content="Starbucks" />
   <!-- <link rel="shortcut icon" type="image/x-icon" href="" /> -->
-  <link rel="stylesheet" href="fa/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="fa/css/all.min.css" /> -->
+  <script src="https://kit.fontawesome.com/882832d0ff.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/web-font.css" />
   <link rel="stylesheet" href="css/style-pc.css" media="screen and (min-width: 1024.0px)" />
   <link rel="stylesheet" href="css/style-m.css" media="screen and (max-width: 1023.9px)" />
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/mine.js"></script>
 
 
   <title>Management Soop</title>
@@ -23,7 +25,7 @@
     <a href="#main" id="skip-nav">본문 바로가기</a>
     <header id="header">
       <div class="content-box">
-       <div class="table-row">
+        <div class="table-row">
           <div class="table-left">
             <h1 class="ir-hidden"></h1>
             <div class="logo">
@@ -82,7 +84,7 @@
               </li>
             </ul>
           </div>
-       </div>
+        </div>
       </div>
     </header>
 
@@ -92,22 +94,102 @@
         <div class="content-box">
           <div class="left">
             <ul class="actor-list">
-             <li class="on"><a href="#">GONG YOO</a></li>
-             <li><a href="#">KONG HYO-JIN</a></li>
-             <li><a href="#">KIM JAE-UCK</a></li>
-             <li><a href="#">SEO HYUN-JIN</a></li>
-             <li><a href="#">LEE CHUN-HEE</a></li>
-             <li><a href="#">JEON DO-YEON</a></li>
-             <li><a href="#">JUNG YU-MI</a></li>
-             <li><a href="#">NAM JI-HYUN</a></li>
-             <li><a href="#">KIM JI-SU</a></li>
-             <li><a href="#">JUNG GA-RAM</a></li>
-             <li><a href="#">JEON SO-NEE</a></li>
-             <li><a href="#">PARK YEON-WOO</a></li>
-             <li><a href="#">CHOI WOO-SHIK</a></li>
-             <li><a href="#">SUZY</a></li>
-             <li><a href="#">NAM JOO-HYUK</a></li>
-             <li><a href="#">JANG SUNG-HOON</a></li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">GONG YOO</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">KONG HYO-JIN</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">KIM JAE-UCK</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">SEO HYUN-JIN</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">LEE CHUN-HEE</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">JEON DO-YEON</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">JUNG YU-MI</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">NAM JI-HYUN</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">KIM JI-SU</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">JUNG GA-RAM</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">JEON SO-NEE</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">PARK YEON-WOO</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">CHOI WOO-SHIK</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">SUZY</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">NAM JOO-HYUK</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="artist-bar"></span>
+                  <div class="name">JANG SUNG-HOON</div>
+                </a>
+              </li>
             </ul>
             <ul class="fanclub">
               <li><a href="#"><img src="img/bnr_01.jpg" alt="공유 팬클럽 With YOO" /></a></li>
@@ -117,7 +199,7 @@
           </div>
           <div class="right">
             <ul class="actor-image">
-              <li>
+              <li class="on">
                 <a href="#">
                   <img src="img/mv-1-공유.jpg" alt="공유" />
                 </a>
@@ -205,97 +287,99 @@
       <section id="main-work">
         <div class="content-box">
           <h3>WORKS</h3>
-         <div class="slide">
-            <ul class="work-list">
-              <li>
-                <a href="#">
-                  <div class="genre" data="movie">Movie</div>
-                  <div class="image">
-                    <img src="img/work-1-경관의피.jpg" alt="경관의 피" />
-                  </div>
-                  <div class="text">
-                    <span class="title">경관의 피</span>
-                    <span class="cast">조진웅, 최우식</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="genre" data="movie">Movie</div>
-                  <div class="image">
-                    <img src="img/work-2-고요의바다.jpg" alt="고요의 바다" />
-                  </div>
-                  <div class="text">
-                    <span class="title">고요의 바다</span>
-                    <span class="cast">공유,배두나,이준</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="genre" data="movie">TV DRAMA</div>
-                  <div class="image">
-                    <img src="img/work-3-크레이지러브.jpg" alt="크레이지 러브" />
-                  </div>
-                  <div class="text">
-                    <span class="title">KBS2 크레이지 러브</span>
-                    <span class="cast">김재욱, 정수정</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="genre" data="movie">MOVIE</div>
-                  <div class="image">
-                    <img src="img/work-4-리멤버.jpg" alt="리멤버" />
-                  </div>
-                  <div class="text">
-                    <span class="title">리멤버</span>
-                    <span class="cast"></span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="genre" data="movie">TV DRAMA</div>
-                  <div class="image">
-                    <img src="img/work-5-스물다섯스물하나.jpg" alt="스물다섯 스물하나" />
-                  </div>
-                  <div class="text">
-                    <span class="title">tvn 스물다섯 스물하나</span>
-                    <span class="cast">김태리,남주혁,보나,최현욱,이주명 dddddddddddddddddddddddddddddddd</span>
-                    <span class="desc">2월 12일 (토) 첫 방송 / 토일드라마</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="genre" data="movie">MOVIE</div>
-                  <div class="image">
-                    <img src="img/work-6-원더랜드.jpg" alt="원더랜드" />
-                  </div>
-                  <div class="text">
-                    <span class="title">원더랜드</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="genre" data="movie">MOVIE</div>
-                  <div class="image">
-                    <img src="img/work-7-비상선언.jpg" alt="비상선언" />
-                  </div>
-                  <div class="text">
-                    <span class="title">비상선어</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-            <p class="control">
-              <a href="#" class="prev">이전</a>
-              <a href="#" class="next">다음</a>
-            </p>
-         </div>
+          <div class="slide-box">
+            <div class="box">
+              <ul class="slide">
+                <li>
+                  <a href="#">
+                    <div class="genre" data="movie">Movie</div>
+                    <div class="image">
+                      <img src="img/work-1-경관의피.jpg" alt="경관의 피" />
+                    </div>
+                    <div class="text">
+                      <span class="title">경관의 피</span>
+                      <span class="cast">조진웅, 최우식</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="genre" data="movie">Movie</div>
+                    <div class="image">
+                      <img src="img/work-2-고요의바다.jpg" alt="고요의 바다" />
+                    </div>
+                    <div class="text">
+                      <span class="title">고요의 바다</span>
+                      <span class="cast">공유,배두나,이준</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="genre" data="movie">TV DRAMA</div>
+                    <div class="image">
+                      <img src="img/work-3-크레이지러브.jpg" alt="크레이지 러브" />
+                    </div>
+                    <div class="text">
+                      <span class="title">KBS2 크레이지 러브</span>
+                      <span class="cast">김재욱, 정수정</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="genre" data="movie">MOVIE</div>
+                    <div class="image">
+                      <img src="img/work-4-리멤버.jpg" alt="리멤버" />
+                    </div>
+                    <div class="text">
+                      <span class="title">리멤버</span>
+                      <span class="cast"></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="genre" data="movie">TV DRAMA</div>
+                    <div class="image">
+                      <img src="img/work-5-스물다섯스물하나.jpg" alt="스물다섯 스물하나" />
+                    </div>
+                    <div class="text">
+                      <span class="title">tvn 스물다섯 스물하나</span>
+                      <span class="cast">김태리,남주혁,보나,최현욱,이주명 dddddddddddddddddddddddddddddddd</span>
+                      <span class="desc">2월 12일 (토) 첫 방송 / 토일드라마</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="genre" data="movie">MOVIE</div>
+                    <div class="image">
+                      <img src="img/work-6-원더랜드.jpg" alt="원더랜드" />
+                    </div>
+                    <div class="text">
+                      <span class="title">원더랜드</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="genre" data="movie">MOVIE</div>
+                    <div class="image">
+                      <img src="img/work-7-비상선언.jpg" alt="비상선언" />
+                    </div>
+                    <div class="text">
+                      <span class="title">비상선어</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- <p class="control">
+              <a href="#" class="prev"><i class="fa-solid fa-chevron-left"><span>이전</span></i></a>
+              <a href="#" class="next"><i class="fa-solid fa-chevron-right"><span>다음 </span></i></a>
+            </p> -->
+          </div>
         </div>
       </section>
 
@@ -310,107 +394,121 @@
               <iframe src="https://www.youtube.com/embed/GyVKoG2bFPg" frameborder="0"></iframe>
             </li>
           </ul>
-         <div class="slide-box">
-           <div class="box">
-              <ul class="vod-list">
+          <div class="slide-box">
+            <div class="box">
+              <ul class="slide">
                 <li>
                   <a href="#">
                     <div class="image"><img src="img/mqdefault.jpg" alt="숲스포일러 프로필 리액션" /></div>
-                  <span class="title">	
-                    [] 숲포일러_프로필 리액션...dddddddddddddddddddddddddd</span>
+                    <span class="title">
+                      [] 숲포일러_프로필 리액션...dddddddddddddddddddddddddd</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div class="image"><img src="img/mqdefault(1).jpg" alt="서현진, 숲포일러 가요숲텐" /></div>
-                  <span class="title">	
-                    [서현진] 숲포일러_가요숲텐...</span>
+                    <span class="title">
+                      [서현진] 숲포일러_가요숲텐...</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div class="image"><img src="img/mqdefault(2).jpg" alt="박연우, 숲포일러 논문" /></div>
-                  <span class="title">	
-                    [박연우] 숲포일러_논문...</span>
+                    <span class="title">
+                      [박연우] 숲포일러_논문...</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div class="image"><img src="img/mqdefault(3).jpg" alt="남지현, 숲포일러 논문" /></div>
-                  <span class="title">	
-                    [남지현] 숲포일러_마녀식당으로오세요 </span>
+                    <span class="title">
+                      [남지현] 숲포일러_마녀식당으로오세요 </span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div class="image"><img src="img/mqdefault(4).jpg" alt="최우식, 숲배우프로필 그리기" /></div>
-                  <span class="title">	
-                    [최우식] 숲포일러_숲배우프로필 그리기 </span>
+                    <span class="title">
+                      [최우식] 숲포일러_숲배우프로필 그리기 </span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div class="image"><img src="img/mqdefault(5).jpg" alt="남주혁, 가요숲텐" /></div>
-                  <span class="title">	
-                    [남주혁] 숲포일러_가요숲텐...</span>
+                    <span class="title">
+                      [남주혁] 숲포일러_가요숲텐...</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div class="image"><img src="img/mqdefault(6).jpg" alt="공효진, 가요숲텐" /></div>
-                  <span class="title">	
-                    [공효진] 숲포일러_가요숲텐...</span>
+                    <span class="title">
+                      [공효진] 숲포일러_가요숲텐...</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div class="image"><img src="img/mqdefault(7).jpg" alt="전도연, 인간실격 마지막 출근날" /></div>
-                  <span class="title">	
-                    [전도연] 숲메이킹_인간실격 마지막 출근 날</span>
+                    <span class="title">
+                      [전도연] 숲메이킹_인간실격 마지막 출근 날</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div class="image"><img src="img/mqdefault(8).jpg" alt="공유, 낚시꾼 공씨를 만나다" /></div>
-                  <span class="title">	
-                    [공유] 숲포일러_낚시꾼 공씨...</span>
+                    <span class="title">
+                      [공유] 숲포일러_낚시꾼 공씨...</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div class="image"><img src="img/mqdefault(9).jpg" alt="공효진, 캠핑 1편" /></div>
-                  <span class="title">	
-                    [공효진] 숲포일러_캠핑 1편...</span>
+                    <span class="title">
+                      [공효진] 숲포일러_캠핑 1편...</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div class="image"><img src="img/mqdefault(10).jpg" alt="전소니, 폴라로이드 꾸미기" /></div>
-                  <span class="title">	
-                    [전소니] 숲포일러_폴꾸(전소니편)</span>
+                    <span class="title">
+                      [전소니] 숲포일러_폴꾸(전소니편)</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div class="image"><img src="img/mqdefault(11).jpg" alt="이천희, 로스쿨 비하인드 영상" /></div>
-                  <span class="title">	
-                    [이천희] 이천희_막촬 비하인드</span>
+                    <span class="title">
+                      [이천희] 이천희_막촬 비하인드</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <div class="image"><img src="img/mqdefault(12).jpg" alt="김재욱, TMI 인터뷰" /></div>
-                  <span class="title">	
-                    [김재욱] 김재욱_TMI인터뷰</span>
+                    <span class="title">
+                      [김재욱] 김재욱_TMI인터뷰</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="image"><img src="img/mqdefault(12).jpg" alt="김재욱, TMI 인터뷰" /></div>
+                    <span class="title">
+                      [김재욱] 김재욱_TMI인터뷰</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="image"><img src="img/mqdefault(12).jpg" alt="김재욱, TMI 인터뷰" /></div>
+                    <span class="title">
+                      [김재욱] 김재욱_TMI인터뷰</span>
                   </a>
                 </li>
               </ul>
-           </div>
+            </div>
             <p class="control">
-              <a href="#" class="prev">이전</a>
-              <a href="#" class="next">다음</a>
+              <a href="#" class="prev"><i class="fa-solid fa-chevron-left"><span>이전</span></i></a>
+              <a href="#" class="next"><i class="fa-solid fa-chevron-right"><span>다음 </span></i></a>
             </p>
-         </div>
+          </div>
         </div>
       </section>
 
@@ -420,7 +518,7 @@
           <a href="#" class="more">more</a>
           <ul class="community-list">
             <li>
-              <a href="#" class="on">
+              <a href="#">
                 <div class="image">
                   <img src="img/c-1-스물다섯스물하나.jpg" alt="스물다섯 스물하나" />
                 </div>
@@ -521,7 +619,8 @@
             <span class="place">서울 강남구 학동로42길 65-1 (논현동 262-19) 65-1, Hakdong-ro 42-gil, Gangnam-gu, Seoul, Korea</span>
             <span class="contact">Fax : 02.543.0061 | msoop04@naver.com</span>
           </address>
-          <p class="copyright">COPYRIGHT ⓒ 2013 ~ 2022 MANAGEMENT SOOP CORP. ALL RIGHTS RESERVED. | CREATED BY PURPLE&COMPANY</p>
+          <p class="copyright">COPYRIGHT ⓒ 2013 ~ 2022 MANAGEMENT SOOP CORP. ALL RIGHTS RESERVED. | CREATED BY
+            PURPLE&COMPANY</p>
         </section>
         <section class="family-site">
           <div class="family-site-box">
@@ -575,6 +674,74 @@
 
     </footer>
   </div>
+
+  <script>
+  'use strict';
+  setImageSlide('ul.slide:eq(1)') ;
+
+  function setImageSlide (selector) {
+    var $selector = $(selector);
+    var slides = document.querySelector('#main-vod ul.slide');
+    var slide = document.querySelectorAll('#main-vod .slide li');
+    var currentIdx = 0;
+    var slideCount = slide.length;
+    var preBtn = document.querySelector('#main-vod p.control a.prev');
+    var nextBtn = document.querySelector('#main-vod p.control a.next');
+    var slideWidth = 186;
+    var slideMargin = 30;
+
+    slides.style.width = (slideWidth + slideMargin) * slideCount - slideMargin + 'px';
+
+    function moveSlide(n) {
+    slides.style.left = (-(n * 216)) + 'px';
+    currentIdx = n;
+    }
+
+    nextBtn.addEventListener('click', function () {
+    if(currentIdx < (slideCount - 8)) { moveSlide(currentIdx + 1); console.log(currentIdx); } else { moveSlide(0); } });
+      preBtn.addEventListener('click', function() { if(currentIdx> 0) {
+      moveSlide(currentIdx - 1);
+      } else {
+      moveSlide(slideCount - 8);
+      }
+      });
+  }
+
+// header
+$('ul.gnb-list > li').mouseenter(function(){
+  $('ul.sub').css({'display' : 'block'});
+}); 
+
+$('ul.gnb-list > li').mouseleave(function(){
+  $('ul.sub').css({'display' : 'none'});
+}); 
+
+// main-visual 영역
+$('#main-visual ul.actor-list li a').mouseenter(function() {
+  var index = $('#main-visual ul.actor-list li').index($(this).parent());
+  console.log(index);
+  $('#main-visual ul.actor-image li:eq('+ index +')').addClass('on');
+});
+
+$('#main-visual ul.actor-list li a').mouseleave(function() {
+  var index = $('#main-visual ul.actor-list li').index($(this).parent());
+  console.log(index);
+  $('#main-visual ul.actor-image li:eq('+ index +')').removeClass('on');
+});
+
+// community
+$('#main-community ul.community-list > li a').mouseenter(function() {
+  $(this).addClass('on');
+});
+
+$('#main-community ul.community-list > li a').mouseleave(function() {
+  $(this).removeClass('on');
+});
+
+
+ 
+
+  </script>
 
 </body>
 
